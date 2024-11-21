@@ -7,7 +7,7 @@ import './TodoList.css';
 
 const TodoList = () => {
   const [list, setList] = useState([]);
-  const [newTodo, setNewTodo] = useState([]);
+  const [newTodo, setNewTodo] = useState('');
   const [filterValue, setFilterValue] = useState("all");
 
   useEffect(() => {
@@ -76,6 +76,7 @@ const TodoList = () => {
     items.push({ id: list[list.length - 1].id + 1, ...payload });
     setLocalStorage(items);
     setList(items);
+    setNewTodo('');
 
     // update data
     await addTodoApi(payload);
