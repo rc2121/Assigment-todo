@@ -1,0 +1,49 @@
+.listitemWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.listitemWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.itemContainer:hover {
+    background: rgb(170, 169, 169);
+    color: white;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.completedItem {
+    text-decoration: line-through;
+}
+
+.checkBox {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.deleteIcon {
+    cursor: pointer;
+}
+
+.deleteIcon > svg {
+    color: rgb(255, 0, 85);
+}

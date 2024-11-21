@@ -1,0 +1,14 @@
+.txtBox {
+    width: 300px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 6px 0 0 6px;
+}
+
+.addBtn {
+    border-radius: 0 6px 6px 0;
+    height: 27px;
+    border-left: 0;
+    padding: 5px;
+    cursor: pointer;
+}
